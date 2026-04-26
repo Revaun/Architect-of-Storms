@@ -75,7 +75,11 @@ I design recruiter‑ready projects that combine technical rigor with clear docu
 | **Monthly Breakdown** | Provide month‑by‑month sales and order counts per product. |
 | **Rolling 3‑Month Averages** | Smooth out sales trends with a moving average for each product. |
 
-```sql
+
+
+
+
+
 -- Basic Join
 SELECT u.username, u.email, p.name AS product_name, o.amount, o.created_at
 FROM users u
@@ -120,8 +124,11 @@ SELECT p.name AS product_name,
 FROM orders o
 JOIN products p ON o.product_id = p.id
 GROUP BY p.name, DATE_FORMAT(o.created_at, '%Y-%m')
-...
 ORDER BY p.name, month;
+
+
+
+
 
 
 ---

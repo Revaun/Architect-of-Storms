@@ -1,8 +1,9 @@
 # Architect of Storms  
 ### CloudFormation Multi‑Tier Stack Project  
 #### AWS Solutions Architect Portfolio Project
+
 <p align="center">
-  <img src="https://your-image-url-here/banner.png" alt="Project Banner" width="1000"/>
+  <img src="assets/banner.png" alt="Project Banner" width="1000"/>
 </p>
 
 <p align="center">
@@ -103,21 +104,20 @@ I design recruiter‑ready projects that combine technical rigor with clear docu
 - SQL analytics queries for reporting, trends, and forecasts.
 
 ---
-
-## Deployment
-```bash
+# Deployment
 ./scripts/deploy.sh
 
-Cleanup
+# Cleanup
 ./scripts/cleanup.sh
 
-SQL Analytics Queries
+# SQL Analytics Queries
 
 -- Basic Join
 SELECT u.username, u.email, p.name AS product_name, o.amount, o.created_at
 FROM users u
 JOIN orders o ON u.id = o.user_id
 JOIN products p ON o.product_id = p.id;
+
 
 -- Product Sales Summary
 SELECT p.name AS product_name,
@@ -127,6 +127,7 @@ FROM orders o
 JOIN products p ON o.product_id = p.id
 GROUP BY p.name;
 
+
 -- User Spending Summary
 SELECT u.username,
        COUNT(o.id) AS orders_count,
@@ -134,6 +135,7 @@ SELECT u.username,
 FROM users u
 JOIN orders o ON u.id = o.user_id
 GROUP BY u.username;
+
 
 -- Monthly Breakdown
 SELECT YEAR(o.created_at) AS year,
@@ -145,6 +147,7 @@ FROM orders o
 JOIN products p ON o.product_id = p.id
 GROUP BY YEAR(o.created_at), MONTH(o.created_at), p.name
 ORDER BY year, month, product_name;
+
 
 -- Rolling 3-Month Averages
 SELECT p.name AS product_name,
@@ -158,7 +161,6 @@ FROM orders o
 JOIN products p ON o.product_id = p.id
 GROUP BY p.name, DATE_FORMAT(o.created_at, '%Y-%m')
 ORDER BY p.name, month;
-
 
 ## Proof Snapshots
 

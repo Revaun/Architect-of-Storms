@@ -63,10 +63,10 @@ I design recruiter‑ready projects that combine technical rigor with clear docu
 
 
 
+
 ---
 
 ### SQL Analytics Queries
-
 | Query | Purpose |
 | --- | --- |
 | **Basic Join** | Show combined user, order, and product details in one view. |

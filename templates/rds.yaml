@@ -1,0 +1,70 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: RDS instance in private subnets for multi-tier architecture
+
+Parameters:
+  VPCId:
+    Type: String
+    Description: VPC ID where RDS will be deployed
+  PrivateSubnet1Id:
+    Type: String
+    Description: First private subnet ID
+  PrivateSubnet2Id:
+    Type: String
+    Description: Second private subnet ID
+  EC2SecurityGroupId:
+    Type: String
+    Description: Security Group ID of EC2 instances
+
+Resources:
+  RDSSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Allow MySQL traffic from EC2 SG
+      VpcId: !Ref VPCId
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 3306
+          ToPort: 3306
+          SourceSecurityGroupId: !Ref EC2SecurityGroupId
+      Tags:
+        - Key: Name
+          Value: CF-RDS-SG
+
+  DBSubnetGroup:
+    Type: AWS::RDS::DBSubnetGroup
+    Properties:
+      DBSubnetGroupDescription: Subnet group for RDS
+      SubnetIds:
+        - !Ref PrivateSubnet1Id
+        - !Ref PrivateSubnet2Id
+      Tags:
+        - Key: Name
+          Value: CF-RDS-SubnetGroup
+
+  RDSInstance:
+    Type: AWS::RDS::DBInstance
+    DeletionPolicy: Snapshot
+    Properties:
+      DBInstanceIdentifier: CF-RDS
+      AllocatedStorage: 20
+      DBInstanceClass: db.t3.micro
+      Engine: mysql
+      MasterUsername: admin
+      MasterUserPassword: MySecurePass123!   # replace with a secure password
+      VPCSecurityGroups:
+        - !Ref RDSSecurityGroup
+      DBSubnetGroupName: !Ref DBSubnetGroup
+      MultiAZ: false
+      PubliclyAccessible: false
+      BackupRetentionPeriod: 1   # free tier compliant
+      Tags:
+        - Key: Name
+          Value: CF-RDS
+
+Outputs:
+  RDSInstanceEndpoint:
+    Description: Endpoint of the RDS instance
+    Value: !GetAtt RDSInstance.Endpoint.Address
+  RDSInstanceIdentifier:
+    Description: Identifier of the RDS instance
+    Value: !Ref RDSInstance

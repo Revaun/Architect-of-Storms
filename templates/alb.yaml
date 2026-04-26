@@ -1,0 +1,66 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Application Load Balancer Stack
+
+Parameters:
+  VpcId:
+    Type: String
+    Description: VPC ID
+  PublicSubnet1Id:
+    Type: String
+    Description: First public subnet in AZ1
+  PublicSubnet2Id:
+    Type: String
+    Description: Second public subnet in AZ2
+
+Resources:
+  ALBSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Security group for ALB
+      VpcId: !Ref VpcId
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+
+  MyALB:
+    Type: AWS::ElasticLoadBalancingV2::LoadBalancer
+    Properties:
+      Name: CF-ALB
+      Scheme: internet-facing
+      Subnets:
+        - !Ref PublicSubnet1Id
+        - !Ref PublicSubnet2Id
+      SecurityGroups:
+        - !Ref ALBSecurityGroup
+
+  TargetGroup:
+    Type: AWS::ElasticLoadBalancingV2::TargetGroup
+    Properties:
+      VpcId: !Ref VpcId
+      Protocol: HTTP
+      Port: 80
+      TargetType: instance
+      HealthCheckProtocol: HTTP
+      HealthCheckPort: 80
+      HealthCheckPath: /
+
+Outputs:
+  CFALBDNSName:
+    Description: DNS name of the ALB
+    Value: !GetAtt MyALB.DNSName
+    Export:
+      Name: CF-ALB-DNSName
+
+  CFALBSG:
+    Description: Security Group for ALB
+    Value: !Ref ALBSecurityGroup
+    Export:
+      Name: CF-ALB-SG
+
+  CFALBTG:
+    Description: Target Group ARN
+    Value: !Ref TargetGroup
+    Export:
+      Name: CF-ALB-TG

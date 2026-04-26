@@ -1,0 +1,25 @@
+import io.github.cdimascio.dotenv.Dotenv;
+
+public class TestDB {
+    public static void main(String[] args) {
+        Dotenv dotenv = Dotenv.load();
+
+        String host = dotenv.get("DB_HOST");
+        String user = dotenv.get("DB_USER");
+        String password = dotenv.get("DB_PASSWORD");
+        String db = dotenv.get("DB_NAME");
+
+        String url = "jdbc:mysql://" + host + ":3306/" + db;
+
+        try (Connection conn = DriverManager.getConnection(url, user, password);
+             Statement stmt = conn.createStatement()) {
+
+            ResultSet rs = stmt.executeQuery("SELECT * FROM test_table;");
+            while (rs.next()) {
+                System.out.println(rs.getInt(1) + " " + rs.getString(2));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+}

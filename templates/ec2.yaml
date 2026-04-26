@@ -1,0 +1,67 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: EC2 Auto Scaling Group behind ALB
+
+Parameters:
+  VpcId:
+    Type: String
+    Description: VPC ID (from CF-VPC-ID export)
+  PublicSubnet1Id:
+    Type: String
+    Description: First public subnet ID (from CF-Public-Subnet1)
+  PublicSubnet2Id:
+    Type: String
+    Description: Second public subnet ID (from CF-Public-Subnet2)
+  TargetGroupArn:
+    Type: String
+    Description: ALB Target Group ARN
+
+Resources:
+  InstanceSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Allow HTTP from ALB
+      VpcId: !Ref VpcId
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          SourceSecurityGroupId: !ImportValue CF-ALB-SG
+
+  LaunchTemplate:
+    Type: AWS::EC2::LaunchTemplate
+    Properties:
+      LaunchTemplateData:
+        ImageId: ami-0d3b35fbd4a36b722   # Amazon Linux 2 for af-south-1
+        InstanceType: t3.micro
+        SecurityGroupIds:
+          - !Ref InstanceSecurityGroup
+        UserData:
+          Fn::Base64: |
+            #!/bin/bash
+            yum update -y
+            yum install -y httpd
+            systemctl enable httpd
+            systemctl start httpd
+            echo "Hello from EC2 Auto Scaling Group" > /var/www/html/index.html
+
+  AutoScalingGroup:
+    Type: AWS::AutoScaling::AutoScalingGroup
+    Properties:
+      VPCZoneIdentifier:
+        - !Ref PublicSubnet1Id
+        - !Ref PublicSubnet2Id
+      LaunchTemplate:
+        LaunchTemplateId: !Ref LaunchTemplate
+        Version: !GetAtt LaunchTemplate.LatestVersionNumber
+      MinSize: 2
+      MaxSize: 4
+      DesiredCapacity: 2
+      TargetGroupARNs:
+        - !Ref TargetGroupArn
+
+Outputs:
+  EC2AutoScalingGroupName:
+    Description: Name of the Auto Scaling Group
+    Value: !Ref AutoScalingGroup
+    Export:
+      Name: CF-EC2-ASG

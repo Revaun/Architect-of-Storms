@@ -74,8 +74,6 @@ I design recruiter‑ready projects that combine technical rigor with clear docu
 ./scripts/cleanup.sh
 
 
-SQL Analytics Queries
-
 | Query | Purpose |
 | --- | --- |
 | **Basic Join** | Show combined user, order, and product details in one view. |
@@ -131,6 +129,7 @@ GROUP BY p.name, DATE_FORMAT(o.created_at, '%Y-%m')
 ORDER BY p.name, month;
 
 
+
 | Stage | Snapshot |
 | --- | --- |
 | **Account Setup** | <img src="docs/proof-snapshots/account-setup.png" width="300" alt="Account Setup"/> |
@@ -144,11 +143,9 @@ ORDER BY p.name, month;
 | **Monthly Sales Summary** | <img src="docs/proof-snapshots/monthly-sales-summary.png" width="300" alt="Monthly Sales Summary"/> |
 | **Rolling Average Sales** | <img src="docs/proof-snapshots/rolling-avg-sales.png" width="300" alt="Rolling Average Sales"/> |
 | **Forecast Overlay** | <img src="docs/proof-snapshots/forecast-overlay.png" width="300" alt="Forecast Overlay"/> |
----
 
-## Snapshot Gallery
 
-Quick thumbnail strip for fast scanning:
+Snapshot Gallery
 
 <p align="center">
 <img src="docs/proof-snapshots/account-setup.png" width="120" alt="Account Setup"/>
@@ -163,41 +160,31 @@ Quick thumbnail strip for fast scanning:
 <img src="docs/proof-snapshots/rolling-avg-sales.png" width="120" alt="Rolling Average"/>
 <img src="docs/proof-snapshots/forecast-overlay.png" width="120" alt="Forecast Overlay"/>
 </p>
-
 ---
 
-
-## Lessons Learned
+#Lessons Learned
 
     Infrastructure as Code: CloudFormation templates simplify repeatable deployments and cleanup.
 
-    SQL Syntax Discipline: Small typos caused errors; validating queries line by line fixed them.
+    SQL Syntax Discipline: Validating queries line by line prevented errors.
 
-    Schema Integrity: Unique constraints prevented duplicate entries.
+    Schema Integrity: Unique constraints ensured data consistency.
 
     Joins Mastery: Learned to properly join across users, orders, and products.
 
-    Window Functions: Gained experience with rolling averages using ROWS BETWEEN 2 PRECEDING AND CURRENT ROW.
+    Window Functions: Gained experience with rolling averages.
 
-    Forecasting: Overlaying linear regression forecasts provided forward-looking insights.
+    Forecasting: Overlaying regression forecasts provided forward‑looking insights.
 
     Monitoring: CloudWatch alarms and dashboards gave visibility into system health.
 
     Documentation: Capturing snapshots at each stage provided undeniable proof of progress.
-
 ---
 
-## Issues Faced & Resolutions
+Issues Faced & Resolutions
 
     Duplicate Entry Error: Attempted to insert a user with an existing email.
-    Resolution: Added unique constraint and corrected insert statements.
-
-    Environment Mismatches: Needed to adapt Linux-style snippets to PowerShell/MySQL CLI formatting.
-    Resolution: Adjusted syntax and validated against manuals.
-
-    Budget Alarm Triggered: AWS Budget alert email showed forecasted spend exceeding $10 cap.
-    Resolution: Reviewed EC2 instances, deleted unused ENIs, and confirmed billing alerts. Snapshot included in repo.
-
+    *Resolution
 ---
 
 ## Project Completion

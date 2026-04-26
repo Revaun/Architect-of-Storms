@@ -36,47 +36,6 @@ I design recruiter‑ready projects that combine technical rigor with clear docu
 - Captured **proof snapshots** at every stage for undeniable recruiter‑ready evidence  
 - Integrated **branding and documentation polish** under the identity *Architect of Storms*  
 
-### Quick Links
-
-<p align="center">
-  <a href="#overview">
-    <img src="https://img.shields.io/badge/Overview-Read-blue?style=for-the-badge&logo=readme"/>
-  </a>
-  <a href="#architecture">
-    <img src="https://img.shields.io/badge/Architecture-Design-orange?style=for-the-badge&logo=aws"/>
-  </a>
-  <a href="#features">
-    <img src="https://img.shields.io/badge/Features-Explore-green?style=for-the-badge&logo=github"/>
-  </a>
-  <a href="#deployment">
-    <img src="https://img.shields.io/badge/Deployment-Scripts-yellow?style=for-the-badge&logo=linux"/>
-  </a>
-  <a href="#proof-snapshots">
-    <img src="https://img.shields.io/badge/Snapshots-Proof-lightgrey?style=for-the-badge&logo=googlephotos"/>
-  </a>
-  <a href="#snapshot-gallery">
-    <img src="https://img.shields.io/badge/Gallery-Thumbnails-purple?style=for-the-badge&logo=images"/>
-  </a>
-  <a href="#lessons-learned">
-    <img src="https://img.shields.io/badge/Lessons-Learned-red?style=for-the-badge&logo=bookstack"/>
-  </a>
-  <a href="#issues-faced--resolutions">
-    <img src="https://img.shields.io/badge/Issues-Resolutions-brown?style=for-the-badge&logo=git"/>
-  </a>
-  <a href="#project-completion">
-    <img src="https://img.shields.io/badge/Completion-Done-darkgreen?style=for-the-badge&logo=checkmarx"/>
-  </a>
-  <a href="#connect-with-me">
-    <img src="https://img.shields.io/badge/Connect-Contact-blueviolet?style=for-the-badge&logo=linkedin"/>
-  </a>
-  <a href="#contributing">
-    <img src="https://img.shields.io/badge/Contributing-Guide-brightgreen?style=for-the-badge&logo=github"/>
-  </a>
-  <a href="#license">
-    <img src="https://img.shields.io/badge/License-MIT-black?style=for-the-badge&logo=open-source-initiative"/>
-  </a>
-</p>
-
 ---
 
 ![AWS Badge](https://img.shields.io/badge/AWS-CloudFormation-orange)
@@ -87,37 +46,49 @@ I design recruiter‑ready projects that combine technical rigor with clear docu
 ---
 
 ## Architecture
-- **VPC**: Isolated networking environment.
-- **Application Load Balancer**: Host-based routing for web components.
-- **EC2 Auto Scaling Group**: Scalable compute layer hosting the application.
-- **Amazon RDS**: Managed relational database.
-- **CloudWatch Monitoring**: Alarms and dashboards for observability.
+- **VPC**: Isolated networking environment.  
+- **Application Load Balancer**: Host-based routing for web components.  
+- **EC2 Auto Scaling Group**: Scalable compute layer hosting the application.  
+- **Amazon RDS**: Managed relational database.  
+- **CloudWatch Monitoring**: Alarms and dashboards for observability.  
 
 ---
 
 ## Features
-- Automated deployment with IaC (CloudFormation).
-- Host-based routing for modular components.
-- Scalable compute layer with Auto Scaling.
-- Managed database with RDS.
-- Monitoring and alerting with CloudWatch.
-- SQL analytics queries for reporting, trends, and forecasts.
+- Automated deployment with IaC (CloudFormation).  
+- Host-based routing for modular components.  
+- Scalable compute layer with Auto Scaling.  
+- Managed database with RDS.  
+- Monitoring and alerting with CloudWatch.  
+- SQL analytics queries for reporting, trends, and forecasts.  
 
 ---
+
+## Deployment
+
+```bash
 # Deployment
 ./scripts/deploy.sh
 
 # Cleanup
 ./scripts/cleanup.sh
 
-# SQL Analytics Queries
+
+SQL Analytics Queries
+
+| Query | Purpose |
+| --- | --- |
+| **Basic Join** | Show combined user, order, and product details in one view. |
+| **Product Sales Summary** | Summarize total sales and order counts per product. |
+| **User Spending Summary** | Calculate how much each user has spent and how many orders they placed. |
+| **Monthly Breakdown** | Provide month‑by‑month sales and order counts per product. |
+| **Rolling 3‑Month Averages** | Smooth out sales trends with a moving average for each product. |
 
 -- Basic Join
 SELECT u.username, u.email, p.name AS product_name, o.amount, o.created_at
 FROM users u
 JOIN orders o ON u.id = o.user_id
 JOIN products p ON o.product_id = p.id;
-
 
 -- Product Sales Summary
 SELECT p.name AS product_name,
@@ -127,7 +98,6 @@ FROM orders o
 JOIN products p ON o.product_id = p.id
 GROUP BY p.name;
 
-
 -- User Spending Summary
 SELECT u.username,
        COUNT(o.id) AS orders_count,
@@ -135,7 +105,6 @@ SELECT u.username,
 FROM users u
 JOIN orders o ON u.id = o.user_id
 GROUP BY u.username;
-
 
 -- Monthly Breakdown
 SELECT YEAR(o.created_at) AS year,
@@ -147,7 +116,6 @@ FROM orders o
 JOIN products p ON o.product_id = p.id
 GROUP BY YEAR(o.created_at), MONTH(o.created_at), p.name
 ORDER BY year, month, product_name;
-
 
 -- Rolling 3-Month Averages
 SELECT p.name AS product_name,
@@ -162,73 +130,38 @@ JOIN products p ON o.product_id = p.id
 GROUP BY p.name, DATE_FORMAT(o.created_at, '%Y-%m')
 ORDER BY p.name, month;
 
-## Proof Snapshots
 
-Below are the captured proof images documenting each stage of the project.  
-Click the thumbnails to view the full screenshots.
-
-<p align="center">
-<img src="docs/proof-snapshots/account-setup.png" width="600"/>
-</p>
-
-<p align="center">
-<img src="docs/proof-snapshots/architecture-diagram.png" width="600"/>
-</p>
-
-<p align="center">
-<img src="docs/proof-snapshots/ec2-snapshots.png" width="600"/>
-</p>
-
-<p align="center">
-<img src="docs/proof-snapshots/rds-instance.png" width="600"/>
-</p>
-
-<p align="center">
-<img src="docs/proof-snapshots/products-data.png" width="600"/>
-</p>
-
-<p align="center">
-<img src="docs/proof-snapshots/users-data.png" width="600"/>
-</p>
-
-<p align="center">
-<img src="docs/proof-snapshots/user-spending-summary.png" width="600"/>
-</p>
-
-<p align="center">
-<img src="docs/proof-snapshots/join-users-orders-products.png" width="600"/>
-</p>
-
-<p align="center">
-<img src="docs/proof-snapshots/monthly-sales-summary.png" width="600"/>
-</p>
-
-<p align="center">
-<img src="docs/proof-snapshots/rolling-avg-sales.png" width="600"/>
-</p>
-
-<p align="center">
-<img src="docs/proof-snapshots/forecast-overlay.png" width="600"/>
-</p>
-
+| Stage | Snapshot |
+| --- | --- |
+| **Account Setup** | <img src="docs/proof-snapshots/account-setup.png" width="300" alt="Account Setup"/> |
+| **Architecture Diagram** | <img src="docs/proof-snapshots/architecture-diagram.png" width="300" alt="Architecture Diagram"/> |
+| **EC2 Auto Scaling Group** | <img src="docs/proof-snapshots/ec2-snapshots.png" width="300" alt="EC2 Auto Scaling Group"/> |
+| **RDS Instance** | <img src="docs/proof-snapshots/rds-instance.png" width="300" alt="RDS Instance"/> |
+| **Products Data** | <img src="docs/proof-snapshots/products-data.png" width="300" alt="Products Data"/> |
+| **Users Data** | <img src="docs/proof-snapshots/users-data.png" width="300" alt="Users Data"/> |
+| **User Spending Summary** | <img src="docs/proof-snapshots/user-spending-summary.png" width="300" alt="User Spending Summary"/> |
+| **Join Users + Orders + Products** | <img src="docs/proof-snapshots/join-users-orders-products.png" width="300" alt="Join Query"/> |
+| **Monthly Sales Summary** | <img src="docs/proof-snapshots/monthly-sales-summary.png" width="300" alt="Monthly Sales Summary"/> |
+| **Rolling Average Sales** | <img src="docs/proof-snapshots/rolling-avg-sales.png" width="300" alt="Rolling Average Sales"/> |
+| **Forecast Overlay** | <img src="docs/proof-snapshots/forecast-overlay.png" width="300" alt="Forecast Overlay"/> |
 ---
 
 ## Snapshot Gallery
 
 Quick thumbnail strip for fast scanning:
 
-<p>
-<img src="docs/proof-snapshots/account-setup.png" width="150"/>
-<img src="docs/proof-snapshots/architecture-diagram.png" width="150"/>
-<img src="docs/proof-snapshots/ec2-snapshots.png" width="150"/>
-<img src="docs/proof-snapshots/rds-instance.png" width="150"/>
-<img src="docs/proof-snapshots/products-data.png" width="150"/>
-<img src="docs/proof-snapshots/users-data.png" width="150"/>
-<img src="docs/proof-snapshots/user-spending-summary.png" width="150"/>
-<img src="docs/proof-snapshots/join-users-orders-products.png" width="150"/>
-<img src="docs/proof-snapshots/monthly-sales-summary.png" width="150"/>
-<img src="docs/proof-snapshots/rolling-avg-sales.png" width="150"/>
-<img src="docs/proof-snapshots/forecast-overlay.png" width="150"/>
+<p align="center">
+<img src="docs/proof-snapshots/account-setup.png" width="120" alt="Account Setup"/>
+<img src="docs/proof-snapshots/architecture-diagram.png" width="120" alt="Architecture Diagram"/>
+<img src="docs/proof-snapshots/ec2-snapshots.png" width="120" alt="EC2 Auto Scaling"/>
+<img src="docs/proof-snapshots/rds-instance.png" width="120" alt="RDS Instance"/>
+<img src="docs/proof-snapshots/products-data.png" width="120" alt="Products Data"/>
+<img src="docs/proof-snapshots/users-data.png" width="120" alt="Users Data"/>
+<img src="docs/proof-snapshots/user-spending-summary.png" width="120" alt="User Spending Summary"/>
+<img src="docs/proof-snapshots/join-users-orders-products.png" width="120" alt="Join Query"/>
+<img src="docs/proof-snapshots/monthly-sales-summary.png" width="120" alt="Monthly Sales"/>
+<img src="docs/proof-snapshots/rolling-avg-sales.png" width="120" alt="Rolling Average"/>
+<img src="docs/proof-snapshots/forecast-overlay.png" width="120" alt="Forecast Overlay"/>
 </p>
 
 ---

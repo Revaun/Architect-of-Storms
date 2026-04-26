@@ -331,3 +331,8 @@ See the [LICENSE](LICENSE) file for full details.
     <img src="https://img.shields.io/badge/License-MIT-black?style=for-the-badge&logo=open-source-initiative"/>
   </a>
 </p>
+
+# Architect of Storms
+## Powered by AWS & Nyvara Stormweaver
+Multi‑Tier CloudFormation Stack &amp; SQL Analytics project. Infrastructure as Code, scalable AWS architecture, and recruiter‑ready visuals.
+

@@ -20,241 +20,93 @@ I design recruiter‑ready projects that combine technical rigor with clear docu
 
 ### Key Skills
 - **AWS CloudFormation** – Infrastructure as Code for scalable deployments  
-- **Amazon RDS & SQL Analytics** – Data modeling, joins, forecasting, reporting  
+- **Amazon RDS & SQL Analytics** – Data modeling, joins, reporting  
 - **DevOps Practices** – CI/CD, automation, repo organization, workflow optimization  
 - **Monitoring & Observability** – CloudWatch dashboards, alarms, budget alerts  
 - **Documentation & Branding** – Recruiter‑ready polish, proof snapshots, clear repo structure  
 
-### Career Goals
-- Earn AWS **Solutions Architect Professional**, **Machine Learning Specialty**, and **Security Specialty** certifications  
-- Transition into advanced **DevOps and Cloud Engineering roles** with a focus on automation and resilience  
-- Build a portfolio of **production‑ready projects** that demonstrate technical depth and recruiter‑ready polish  
-
-### Highlights
-- Designed and deployed a **multi‑tier AWS CloudFormation stack** with automated scaling and monitoring  
-- Built a **SQL analytics suite** with joins, summaries, rolling averages, and forecasting overlays  
-- Captured **proof snapshots** at every stage for undeniable recruiter‑ready evidence  
-- Integrated **branding and documentation polish** under the identity *Architect of Storms*  
-
----
-
-![AWS Badge](https://img.shields.io/badge/AWS-CloudFormation-orange)
-![SQL Badge](https://img.shields.io/badge/MySQL-Analytics-blue)
-![DevOps Badge](https://img.shields.io/badge/DevOps-Portfolio-green)
-![Monitoring Badge](https://img.shields.io/badge/CloudWatch-Monitoring-yellow)
-
 ---
 
 ## Architecture
-- **VPC**: Isolated networking environment.  
-- **Application Load Balancer**: Host-based routing for web components.  
-- **EC2 Auto Scaling Group**: Scalable compute layer hosting the application.  
-- **Amazon RDS**: Managed relational database.  
-- **CloudWatch Monitoring**: Alarms and dashboards for observability.  
+- **VPC**: Isolated networking environment  
+- **Application Load Balancer**: Host-based routing for web components  
+- **EC2 Auto Scaling Group**: Scalable compute layer hosting the application  
+- **Amazon RDS**: Managed relational database  
+- **CloudWatch Monitoring**: Alarms and dashboards for observability  
 
 ---
 
 ## Features
-- Automated deployment with IaC (CloudFormation).  
-- Host-based routing for modular components.  
-- Scalable compute layer with Auto Scaling.  
-- Managed database with RDS.  
-- Monitoring and alerting with CloudWatch.  
-- SQL analytics queries for reporting, trends, and forecasts.  
+- Automated deployment with IaC (CloudFormation)  
+- Host-based routing for modular components  
+- Scalable compute layer with Auto Scaling  
+- Managed database with RDS  
+- Monitoring and alerting with CloudWatch  
+- SQL analytics queries for reporting and trends  
 
 ---
 
-## Deployment
+## Proof Snapshots
 
-```bash
-# Deployment
-./scripts/deploy.sh
+| Snapshot | Description |
+|----------|-------------|
+| **Account Setup** | Initial AWS account and IAM configuration. |
+| **Architecture Diagram** | High‑level AWS architecture showing VPC, subnets, and routing layers. |
+| **EC2 Auto Scaling Group** | Scalable compute layer hosting the application. |
+| **RDS Instance** | Managed relational database deployment. |
+| **Products Data** | Inserted product dataset for analytics. |
+| **Users Data** | Inserted user dataset for analytics. |
+| **User Spending Summary** | Query results showing per‑user spending and order counts. |
+| **Join Users + Orders + Products** | Combined query output for relational joins. |
+| **Monthly Sales Summary** | Month‑by‑month breakdown of product sales. |
+| **Rolling Average Sales** | Moving average query output for trend smoothing. |
 
-# Cleanup
-./scripts/cleanup.sh
+*(Forecast overlay removed — no snapshot available.)*
 
-
-| Query | Purpose |
-| --- | --- |
-| **Basic Join** | Show combined user, order, and product details in one view. |
-| **Product Sales Summary** | Summarize total sales and order counts per product. |
-| **User Spending Summary** | Calculate how much each user has spent and how many orders they placed. |
-| **Monthly Breakdown** | Provide month‑by‑month sales and order counts per product. |
-| **Rolling 3‑Month Averages** | Smooth out sales trends with a moving average for each product. |
-
--- Basic Join
-SELECT u.username, u.email, p.name AS product_name, o.amount, o.created_at
-FROM users u
-JOIN orders o ON u.id = o.user_id
-JOIN products p ON o.product_id = p.id;
-
--- Product Sales Summary
-SELECT p.name AS product_name,
-       SUM(o.amount) AS total_sales,
-       COUNT(*) AS orders_count
-FROM orders o
-JOIN products p ON o.product_id = p.id
-GROUP BY p.name;
-
--- User Spending Summary
-SELECT u.username,
-       COUNT(o.id) AS orders_count,
-       SUM(o.amount) AS total_spent
-FROM users u
-JOIN orders o ON u.id = o.user_id
-GROUP BY u.username;
-
--- Monthly Breakdown
-SELECT YEAR(o.created_at) AS year,
-       MONTH(o.created_at) AS month,
-       p.name AS product_name,
-       SUM(o.amount) AS total_sales,
-       COUNT(*) AS orders_count
-FROM orders o
-JOIN products p ON o.product_id = p.id
-GROUP BY YEAR(o.created_at), MONTH(o.created_at), p.name
-ORDER BY year, month, product_name;
-
--- Rolling 3-Month Averages
-SELECT p.name AS product_name,
-       DATE_FORMAT(o.created_at, '%Y-%m') AS month,
-       AVG(SUM(o.amount)) OVER (
-           PARTITION BY p.name
-           ORDER BY DATE_FORMAT(o.created_at, '%Y-%m')
-           ROWS BETWEEN 2 PRECEDING AND CURRENT ROW
-       ) AS rolling_avg_sales
-FROM orders o
-JOIN products p ON o.product_id = p.id
-GROUP BY p.name, DATE_FORMAT(o.created_at, '%Y-%m')
-ORDER BY p.name, month;
-
-
-
-| Stage | Snapshot |
-| --- | --- |
-| **Account Setup** | <img src="docs/proof-snapshots/account-setup.png" width="300" alt="Account Setup"/> |
-| **Architecture Diagram** | <img src="docs/proof-snapshots/architecture-diagram.png" width="300" alt="Architecture Diagram"/> |
-| **EC2 Auto Scaling Group** | <img src="docs/proof-snapshots/ec2-snapshots.png" width="300" alt="EC2 Auto Scaling Group"/> |
-| **RDS Instance** | <img src="docs/proof-snapshots/rds-instance.png" width="300" alt="RDS Instance"/> |
-| **Products Data** | <img src="docs/proof-snapshots/products-data.png" width="300" alt="Products Data"/> |
-| **Users Data** | <img src="docs/proof-snapshots/users-data.png" width="300" alt="Users Data"/> |
-| **User Spending Summary** | <img src="docs/proof-snapshots/user-spending-summary.png" width="300" alt="User Spending Summary"/> |
-| **Join Users + Orders + Products** | <img src="docs/proof-snapshots/join-users-orders-products.png" width="300" alt="Join Query"/> |
-| **Monthly Sales Summary** | <img src="docs/proof-snapshots/monthly-sales-summary.png" width="300" alt="Monthly Sales Summary"/> |
-| **Rolling Average Sales** | <img src="docs/proof-snapshots/rolling-avg-sales.png" width="300" alt="Rolling Average Sales"/> |
-| **Forecast Overlay** | <img src="docs/proof-snapshots/forecast-overlay.png" width="300" alt="Forecast Overlay"/> |
-
-
-Snapshot Gallery
-
-<p align="center">
-<img src="docs/proof-snapshots/account-setup.png" width="120" alt="Account Setup"/>
-<img src="docs/proof-snapshots/architecture-diagram.png" width="120" alt="Architecture Diagram"/>
-<img src="docs/proof-snapshots/ec2-snapshots.png" width="120" alt="EC2 Auto Scaling"/>
-<img src="docs/proof-snapshots/rds-instance.png" width="120" alt="RDS Instance"/>
-<img src="docs/proof-snapshots/products-data.png" width="120" alt="Products Data"/>
-<img src="docs/proof-snapshots/users-data.png" width="120" alt="Users Data"/>
-<img src="docs/proof-snapshots/user-spending-summary.png" width="120" alt="User Spending Summary"/>
-<img src="docs/proof-snapshots/join-users-orders-products.png" width="120" alt="Join Query"/>
-<img src="docs/proof-snapshots/monthly-sales-summary.png" width="120" alt="Monthly Sales"/>
-<img src="docs/proof-snapshots/rolling-avg-sales.png" width="120" alt="Rolling Average"/>
-<img src="docs/proof-snapshots/forecast-overlay.png" width="120" alt="Forecast Overlay"/>
-</p>
 ---
 
-#Lessons Learned
+## Lessons Learned
+- Infrastructure as Code simplifies repeatable deployments and cleanup.  
+- SQL syntax discipline prevents query errors.  
+- Schema integrity ensures data consistency.  
+- Joins across users, orders, and products build richer insights.  
+- Window functions enable rolling averages.  
+- Monitoring with CloudWatch provides visibility into system health.  
+- Documentation with snapshots creates undeniable proof of progress.  
 
-    Infrastructure as Code: CloudFormation templates simplify repeatable deployments and cleanup.
-
-    SQL Syntax Discipline: Validating queries line by line prevented errors.
-
-    Schema Integrity: Unique constraints ensured data consistency.
-
-    Joins Mastery: Learned to properly join across users, orders, and products.
-
-    Window Functions: Gained experience with rolling averages.
-
-    Forecasting: Overlaying regression forecasts provided forward‑looking insights.
-
-    Monitoring: CloudWatch alarms and dashboards gave visibility into system health.
-
-    Documentation: Capturing snapshots at each stage provided undeniable proof of progress.
 ---
 
-Issues Faced & Resolutions
+## Issues Faced & Resolutions
+- **Duplicate Entry Error**: Attempted to insert a user with an existing email.  
+  *Resolution*: Enforced unique constraints on schema.  
+- **Dead Forecast Link**: Forecast overlay PNG did not exist.  
+  *Resolution*: Removed reference to forecast snapshot.  
+- **Excessive Badges/Quicklinks**: README felt cluttered.  
+  *Resolution*: Slimmed down badges, removed “Connect with Me” and “Contribute” sections.  
 
-    Duplicate Entry Error: Attempted to insert a user with an existing email.
-    *Resolution
 ---
 
 ## Project Completion
-
 This project has been successfully completed with full proof snapshots and a reporting suite.  
-All schema definitions, data inserts, joins, summaries, time analysis, rolling averages, and forecast overlays have been captured and documented.
+All schema definitions, data inserts, joins, summaries, time analysis, and rolling averages have been captured and documented.
 
 Author: Revaun  
-Date: April 2026
-
----
-
-## Closing Statement
-
-This project embodies my approach as the *Architect of Storms*: blending technical depth, clear documentation, and recruiter‑ready polish.  
-It stands as both a showcase of AWS and SQL expertise and an invitation to collaborate, contribute, and connect.
-
-*— Revaun, Architect of Storms*
-*— Proof in the Storm, Precision in the Cloud*
-
----
-
-## Connect With Me
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/revaun-souls-a653763b6" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin"/>
-  </a>
-  <a href="https://github.com/Revaun/Architect-of-Storms" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-Portfolio-black?style=for-the-badge&logo=github"/>
-  </a>
-  <a href="mailto:revaun@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail"/>
-  </a>
-</p>
-
----
-
-## Contributing
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge&logo=github"/>
-</p>
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to fork, branch, and submit pull requests.
+Date: April 2026  
 
 ---
 
 ## License
-
 This project is licensed under the **MIT License**.  
 You are free to use, modify, and distribute it with proper attribution.  
 
-See the [LICENSE](LICENSE) file for full details.
+---
+
+## Badges
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
+![DevOps](https://img.shields.io/badge/DevOps-Workflow-blue)
+![CloudWatch](https://img.shields.io/badge/CloudWatch-Monitoring-green)
 
 ---
 
-<p align="center">
-  <a href="#connect-with-me">
-    <img src="https://img.shields.io/badge/Connect-LinkedIn%20|%20GitHub%20|%20Email-blueviolet?style=for-the-badge&logo=linkedin"/>
-  </a>
-  <a href="#contributing">
-    <img src="https://img.shields.io/badge/Contribute-Open%20Source%20Guide-brightgreen?style=for-the-badge&logo=github"/>
-  </a>
-  <a href="#license">
-    <img src="https://img.shields.io/badge/License-MIT-black?style=for-the-badge&logo=open-source-initiative"/>
-  </a>
-</p>
-
-# Architect of Storms
-## Powered by AWS & Nyvara Stormweaver
-Multi‑Tier CloudFormation Stack &amp; SQL Analytics project. Infrastructure as Code, scalable AWS architecture, and recruiter‑ready visuals.
-
+*Signature: Architect of Storms*  
+*Proof in the Storm, Precision in the Cloud*

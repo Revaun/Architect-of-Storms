@@ -1,26 +1,33 @@
-Architect of Storms
-CloudFormation Multi‑Tier Stack Project
-AWS Solutions Architect Portfolio Project
+# Architect of Storms  
+*Forging Cloud Architecture from the Storm*
+
+---
 
 <p align="center">
-<img src="assets/banner.png" alt="Project Banner" width="1000"/>
+  <img src="assets/banner.png" alt="Project Banner" width="1000"/>
 </p>
 
 <p align="center">
-<em>Architect of Storms – Forging Cloud Architecture from the Storm</em>
+  <em>Architect of Storms – Forging Cloud Architecture from the Storm</em>
 </p>
-About Me
 
-I’m Revaun, a cloud solutions enthusiast focused on AWS architecture, DevOps practices, and SQL analytics.
-My goals: AWS Solutions Architect Pro, Machine Learning Specialty, Security Specialty certifications.
-I design recruiter‑ready projects that combine technical rigor with clear documentation, proof snapshots, and branding.
+***
+
+## About Me
+I’m Revaun, building resilient AWS solutions with a focus on CloudFormation, DevOps, and SQL analytics.  
+Career goals: AWS Solutions Architect Pro • Machine Learning Specialty • Security Specialty  
+
+---
 
 ## Architecture Overview
-- VPC – Isolated networking environment  
-- Application Load Balancer – Host‑based routing  
-- EC2 Auto Scaling Group – Scalable compute layer  
-- Amazon RDS – Managed relational database  
-- CloudWatch Monitoring – Alarms and dashboards  
+This project demonstrates a multi‑tier CloudFormation stack with scalable services, monitoring, and analytics.
+
+- **VPC** – Isolated networking environment  
+- **Application Load Balancer** – Host‑based routing  
+- **EC2 Auto Scaling Group** – Scalable compute layer  
+- **Amazon RDS** – Managed relational database  
+- **CloudWatch Monitoring** – Alarms and dashboards  
+
 
 ## Features
 - Automated deployment with IaC (CloudFormation)  

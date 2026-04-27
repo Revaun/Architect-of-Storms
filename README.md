@@ -15,7 +15,11 @@
 
 ## About Me
 I’m Revaun, building resilient AWS solutions with a focus on CloudFormation, DevOps, and SQL analytics.  
-Career goals: AWS Solutions Architect Pro • Machine Learning Specialty • Security Specialty  
+Career goals: AWS Solutions Architect Pro • Machine Learning Specialty • Security Specialty
+[![AWS Solutions Architect Pro](https://img.shields.io/badge/AWS-Solutions_Architect_Pro-orange?style=for-the-badge&logo=amazonaws)]()
+[![AWS Machine Learning Specialty](https://img.shields.io/badge/AWS-Machine_Learning_Specialty-blue?style=for-the-badge&logo=amazonaws)]()
+[![AWS Security Specialty](https://img.shields.io/badge/AWS-Security_Specialty-red?style=for-the-badge&logo=amazonaws)]()
+[![DevOps](https://img.shields.io/badge/DevOps-Workflow-green?style=for-the-badge&logo=githubactions)]()  
 
 ---
 
@@ -166,11 +170,14 @@ Project completed with full proof snapshots and reporting suite.
 ## License
 MIT License — free to use, modify, and distribute with attribution.  
 
-## Badges
-![AWS Cloud](https://img.shields.io/badge/AWS-Cloud-orange)  
-![DevOps Workflow](https://img.shields.io/badge/DevOps-Workflow-blue)  
-![CloudWatch Monitoring](https://img.shields.io/badge/CloudWatch-Monitoring-green)  
-
 ## Signature
 **Architect of Storms**  
 *Proof in the Storm, Precision in the Cloud*
+
+---
+
+<p align="center">
+  <em>Proof in the Storm, Precision in the Cloud 🌪️</em>
+</p>
+
+

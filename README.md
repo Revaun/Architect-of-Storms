@@ -14,12 +14,14 @@
 ***
 
 ## About Me
-I’m Revaun, building resilient AWS solutions with a focus on CloudFormation, DevOps, and SQL analytics.  
+
+I'm Revaun, building resilient AWS solutions with a focus on CloudFormation, DevOps, and SQL analytics.  
 Career goals: AWS Solutions Architect Pro • Machine Learning Specialty • Security Specialty
-[![AWS Solutions Architect Pro](https://img.shields.io/badge/AWS-Solutions_Architect_Pro-orange?style=for-the-badge&logo=amazonaws)]()
-[![AWS Machine Learning Specialty](https://img.shields.io/badge/AWS-Machine_Learning_Specialty-blue?style=for-the-badge&logo=amazonaws)]()
-[![AWS Security Specialty](https://img.shields.io/badge/AWS-Security_Specialty-red?style=for-the-badge&logo=amazonaws)]()
-[![DevOps](https://img.shields.io/badge/DevOps-Workflow-green?style=for-the-badge&logo=githubactions)]()  
+
+- ![AWS Solutions Architect Pro](https://img.shields.io/badge/AWS-Solutions_Architect_Pro-orange?style=flat-square) — Professional certification goal
+- ![AWS Machine Learning Specialty](https://img.shields.io/badge/AWS-Machine_Learning_Specialty-blue?style=flat-square) — ML specialty focus
+- ![AWS Security Specialty](https://img.shields.io/badge/AWS-Security_Specialty-red?style=flat-square) — Security specialty track
+- ![DevOps Workflow](https://img.shields.io/badge/DevOps-Workflow-green?style=flat-square) — Workflow automation & CI/CD
 
 ---
 
@@ -177,7 +179,5 @@ MIT License — free to use, modify, and distribute with attribution.
 ---
 
 <p align="center">
-  <em>Proof in the Storm, Precision in the Cloud 🌪️</em>
+  <em>Proof in the Storm, Precision in the Cloud ☁️</em>
 </p>
-
-

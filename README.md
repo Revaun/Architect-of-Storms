@@ -18,10 +18,11 @@
 I'm Revaun, building resilient AWS solutions with a focus on CloudFormation, DevOps, and SQL analytics.  
 Career goals: AWS Solutions Architect Pro • Machine Learning Specialty • Security Specialty
 
-- ![AWS Solutions Architect Pro](https://img.shields.io/badge/AWS-Solutions_Architect_Pro-orange?style=flat-square) — Professional certification goal
-- ![AWS Machine Learning Specialty](https://img.shields.io/badge/AWS-Machine_Learning_Specialty-blue?style=flat-square) — ML specialty focus
-- ![AWS Security Specialty](https://img.shields.io/badge/AWS-Security_Specialty-red?style=flat-square) — Security specialty track
+- ![AWS Solutions Architect Pro](https://img.shields.io/badge/AWS-SAP-orange?style=flat-square) — Professional certification goal  
+- ![AWS Machine Learning Specialty](https://img.shields.io/badge/AWS-MLS-blue?style=flat-square) — ML specialty focus  
+- ![AWS Security Specialty](https://img.shields.io/badge/AWS-SEC-red?style=flat-square) — Security specialty track  
 - ![DevOps Workflow](https://img.shields.io/badge/DevOps-Workflow-green?style=flat-square) — Workflow automation & CI/CD
+
 
 ---
 
@@ -47,9 +48,9 @@ This project demonstrates a multi‑tier CloudFormation stack with scalable serv
 Scripts are provided for quick setup and teardown.
 
 
+## SQL Analytics Query
 ---
 
-### SQL Analytics Queries
 | Query | Purpose |
 | --- | --- |
 | **Basic Join** | Combine user, order, and product details |
@@ -57,7 +58,6 @@ Scripts are provided for quick setup and teardown.
 | **User Spending Summary** | Calculate per‑user spending and order counts |
 | **Monthly Breakdown** | Month‑by‑month sales and order counts |
 | **Rolling 3‑Month Averages** | Smooth trends with moving averages |
-
 
 <details>
 <summary><strong>Basic Join</strong></summary>
@@ -126,7 +126,13 @@ ORDER BY p.name, month;
 </details>
 
 
----## Proof Snapshots
+## Proof Snapshots
+---
+
+<p align="center">
+  <!-- Thumbnail grid or images go here -->
+</p>
+
 
 | Description | Snapshot |
 |-------------|----------|

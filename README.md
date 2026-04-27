@@ -15,39 +15,24 @@ I’m Revaun, a cloud solutions enthusiast focused on AWS architecture, DevOps p
 My goals: AWS Solutions Architect Pro, Machine Learning Specialty, Security Specialty certifications.
 I design recruiter‑ready projects that combine technical rigor with clear documentation, proof snapshots, and branding.
 
-Architecture Overview
+## Architecture Overview
+- VPC – Isolated networking environment  
+- Application Load Balancer – Host‑based routing  
+- EC2 Auto Scaling Group – Scalable compute layer  
+- Amazon RDS – Managed relational database  
+- CloudWatch Monitoring – Alarms and dashboards  
 
-    VPC – Isolated networking environment
+## Features
+- Automated deployment with IaC (CloudFormation)  
+- Host‑based routing for modular components  
+- Scalable compute layer with Auto Scaling  
+- Managed database with RDS  
+- Monitoring and alerting with CloudWatch  
+- SQL analytics queries for reporting and trends  
 
-    Application Load Balancer – Host‑based routing
+## Deployment
+Scripts are provided for quick setup and teardown.
 
-    EC2 Auto Scaling Group – Scalable compute layer
-
-    Amazon RDS – Managed relational database
-
-    CloudWatch Monitoring – Alarms and dashboards
-
-Features
-
-    Automated deployment with IaC (CloudFormation)
-
-    Host‑based routing for modular components
-
-    Scalable compute layer with Auto Scaling
-
-    Managed database with RDS
-
-    Monitoring and alerting with CloudWatch
-
-    SQL analytics queries for reporting and trends
-
-Deployment
-
-Scripts
-
-    Deploy the stack: ./scripts/deploy.sh
-
-    Cleanup resources: ./scripts/cleanup.sh
 
 ---
 
@@ -128,107 +113,59 @@ ORDER BY p.name, month;
 </details>
 
 
----
+---## Proof Snapshots
 
-Proof Snapshots
+| Description | Snapshot |
+|-------------|----------|
+| Account setup | [![Account Setup](docs/proof-snapshots/account-setup.png)](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/account-setup.png) |
+| Agent service status | [![Agent Status](docs/proof-snapshots/agent-status.png)](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/agent-status.png) |
+| ALB created | [![ALB Created](docs/proof-snapshots/alb-created.png)](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/alb-created.png) |
+| Architecture diagram | [![Architecture Diagram](docs/proof-snapshots/architecture-diagram.png)](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/architecture-diagram.png) |
+| DB security group | [![DB SG](docs/proof-snapshots/db-sg.png)](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/db-sg.png) |
+| DB subnet group | [![DB Subnet](docs/proof-snapshots/db-subnet-group.png)](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/db-subnet-group.png) |
+| EC2 AMIs | [![EC2 AMIs](docs/proof-snapshots/ec2-amis.png)](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/ec2-amis.png) |
+| EC2 snapshots | [![EC2 Snapshots](docs/proof-snapshots/ec2-snapshots.png)](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/ec2-snapshots.png) |
+| IAM role attached | [![IAM Role](docs/proof-snapshots/iam-role-attached.png)](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/iam-role-attached.png) |
+| RDS instance | [![RDS Instance](docs/proof-snapshots/rds-instance.png)](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/rds-instance.png) |
+| RDS snapshots | [![RDS Snapshots](docs/proof-snapshots/rds-snapshots.png)](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/rds-snapshots.png) |
+| SQL join proof | [![Join Users Orders Products](docs/proof-snapshots/join-users-orders-products.png)](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/join-users-orders-products.png) |
+| Monthly sales summary | [![Monthly Sales](docs/proof-snapshots/monthly-sales-summary.png)](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/monthly-sales-summary.png) |
+| Rolling average sales | [![Rolling Avg](docs/proof-snapshots/rolling-avg-sales.png)](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/rolling-avg-sales.png) |
+| User spending summary | [![User Spending](docs/proof-snapshots/user-spending-summary.png)](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/user-spending-summary.png) |
 
-
-<p align="center">
-
-<a href="docs/proof-snapshots/account-setup.png">
-<img src="docs/proof-snapshots/account-setup.png" width="150" alt="Account Setup"/><br/>
-<strong>Account Setup</strong> – Initial AWS account and IAM configuration
-</a>
-
-<a href="docs/proof-snapshots/architecture-diagram.png">
-<img src="docs/proof-snapshots/architecture-diagram.png" width="150" alt="Architecture Diagram"/><br/>
-<strong>Architecture Diagram</strong> – High‑level AWS architecture showing VPC, subnets, and routing layers
-</a>
-
-<a href="docs/proof-snapshots/ec2-snapshots.png">
-<img src="docs/proof-snapshots/ec2-snapshots.png" width="150" alt="EC2 Auto Scaling"/><br/>
-<strong>EC2 Auto Scaling Group</strong> – Scalable compute layer hosting the application
-</a>
-
-<a href="docs/proof-snapshots/rds-instance.png">
-<img src="docs/proof-snapshots/rds-instance.png" width="150" alt="RDS Instance"/><br/>
-<strong>RDS Instance</strong> – Managed relational database deployment
-</a>
-
-<a href="docs/proof-snapshots/products-data.png">
-<img src="docs/proof-snapshots/products-data.png" width="150" alt="Products Data"/><br/>
-<strong>Products Data</strong> – Inserted product dataset for analytics
-</a>
-
-<a href="docs/proof-snapshots/users-data.png">
-<img src="docs/proof-snapshots/users-data.png" width="150" alt="Users Data"/><br/>
-<strong>Users Data</strong> – Inserted user dataset for analytics
-</a>
-
-<a href="docs/proof-snapshots/user-spending-summary.png">
-<img src="docs/proof-snapshots/user-spending-summary.png" width="150" alt="User Spending Summary"/><br/>
-<strong>User Spending Summary</strong> – Query results showing per‑user spending and order counts
-</a>
-
-<a href="docs/proof-snapshots/join-users-orders-products.png">
-<img src="docs/proof-snapshots/join-users-orders-products.png" width="150" alt="Join Query"/><br/>
-<strong>Join Users + Orders + Products</strong> – Combined query output for relational joins
-</a>
-
-<a href="docs/proof-snapshots/monthly-sales-summary.png">
-<img src="docs/proof-snapshots/monthly-sales-summary.png" width="150" alt="Monthly Sales"/><br/>
-<strong>Monthly Sales Summary</strong> – Month‑by‑month breakdown of product sales
-</a>
-
-<a href="docs/proof-snapshots/rolling-avg-sales.png">
-<img src="docs/proof-snapshots/rolling-avg-sales.png" width="150" alt="Rolling Average"/><br/>
-<strong>Rolling Average Sales</strong> – Moving average query output for trend smoothing
-</a>
-
-</p>
-
----
-
-Lessons Learned
-
-    Infrastructure as Code simplifies repeatable deployments
-
-    SQL syntax discipline prevents query errors
-
-    Schema integrity ensures data consistency
-
-    Joins build richer insights
-
-    Window functions enable rolling averages
-
-    Monitoring with CloudWatch provides visibility
-
-    Documentation with snapshots proves progress
-
----
+</details>
 
 
-Issues Faced & Resolutions
+## Lessons Learned
+- **Infrastructure as Code** simplifies repeatable deployments  
+- **SQL syntax discipline** prevents query errors  
+- **Schema integrity** ensures data consistency  
+- **Joins** build richer insights  
+- **Window functions** enable rolling averages  
+- **Monitoring with CloudWatch** provides visibility  
+- **Documentation with snapshots** proves progress  
 
-    Duplicate Entry Error → enforced unique constraints
+</details>
 
-    Dead Forecast Link → removed broken reference
+## Issues Faced & Resolutions
+- **Duplicate Entry Error** → enforced unique constraints  
+- **Dead Forecast Link** → removed broken reference  
+- **Excessive Badges** → slimmed down for clarity  
 
-    Excessive Badges → slimmed down for clarity
-
----
 
 Completion
 
 Project completed with full proof snapshots and reporting suite.
 Author: Revaun • Date: April 2026
 
+</details>
 ---
 
 License
 
 MIT License — free to use, modify, distribute with attribution.
 
+</details>
 ---
 
 Badges
@@ -237,6 +174,7 @@ https://img.shields.io/badge/AWS-Cloud-orange
 https://img.shields.io/badge/DevOps-Workflow-blue  
 https://img.shields.io/badge/CloudWatch-Monitoring-green
 
+</details>
 ---
 
 Signature

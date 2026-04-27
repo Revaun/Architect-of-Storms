@@ -152,31 +152,18 @@ ORDER BY p.name, month;
 - **Dead Forecast Link** → removed broken reference  
 - **Excessive Badges** → slimmed down for clarity  
 
+## Completion
+Project completed with full proof snapshots and reporting suite.  
+**Author:** Revaun • **Date:** April 2026  
 
-Completion
+## License
+MIT License — free to use, modify, and distribute with attribution.  
 
-Project completed with full proof snapshots and reporting suite.
-Author: Revaun • Date: April 2026
+## Badges
+![AWS Cloud](https://img.shields.io/badge/AWS-Cloud-orange)  
+![DevOps Workflow](https://img.shields.io/badge/DevOps-Workflow-blue)  
+![CloudWatch Monitoring](https://img.shields.io/badge/CloudWatch-Monitoring-green)  
 
-</details>
----
-
-License
-
-MIT License — free to use, modify, distribute with attribution.
-
-</details>
----
-
-Badges
-
-https://img.shields.io/badge/AWS-Cloud-orange  
-https://img.shields.io/badge/DevOps-Workflow-blue  
-https://img.shields.io/badge/CloudWatch-Monitoring-green
-
-</details>
----
-
-Signature
-<p align="center"><strong>Architect of Storms</strong><br/>
-<em>Proof in the Storm, Precision in the Cloud</em></p>
+## Signature
+**Architect of Storms**  
+*Proof in the Storm, Precision in the Cloud*

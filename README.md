@@ -133,6 +133,7 @@ ORDER BY p.name, month;
   <!-- Thumbnail grid or images go here -->
 </p>
 
+**The snapshots below trace the build from setup to completion — the final row shows the stack fully deployed.**
 
 | Description | Snapshot |
 |-------------|----------|
@@ -151,6 +152,10 @@ ORDER BY p.name, month;
 | Monthly sales summary | [![Monthly Sales](docs/proof-snapshots/monthly-sales-summary.png)](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/monthly-sales-summary.png) |
 | Rolling average sales | [![Rolling Avg](docs/proof-snapshots/rolling-avg-sales.png)](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/rolling-avg-sales.png) |
 | User spending summary | [![User Spending](docs/proof-snapshots/user-spending-summary.png)](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/user-spending-summary.png) |
+| Final multi‑tier deployment | [![Final Deployment](docs/proof-snapshots/Architect-of-Storms_Final-Multi-Tier-Deployment-Snapshot.png)](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/Architect-of-Storms_Final-Multi-Tier-Deployment-Snapshot.png) |
+
+
+
 
 </details>
 
@@ -172,15 +177,17 @@ ORDER BY p.name, month;
 - **Excessive Badges** → slimmed down for clarity  
 
 ## Completion
+**This project demonstrates the full lifecycle — from design to proof in the storm.**
+
 Project completed with full proof snapshots and reporting suite.  
-**Author:** Revaun • **Date:** April 2026  
+**Author:** Revaun • **Date:** April 2026   
 
 ## License
 MIT License — free to use, modify, and distribute with attribution.  
 
 ## Signature
 **Architect of Storms**  
-*Proof in the Storm, Precision in the Cloud*
+*From design to storm, precision in the cloud*
 
 ---
 

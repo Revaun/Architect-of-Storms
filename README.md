@@ -130,40 +130,39 @@ ORDER BY p.name, month;
 
 **From setup to completion: a full proof trail of the Architect of Storms build**
 
-
 | Stage | Snapshot |
 |-------|----------|
-| **Account Setup** | <img src="docs/proof-snapshots/account-setup.png" width="300" alt="Account Setup"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/account-setup.png?raw=true) |
-| **Agent Status** | <img src="docs/proof-snapshots/agent-status.png" width="300" alt="Agent Status"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/agent-status.png?raw=true) |
-| **ALB Created** | <img src="docs/proof-snapshots/alb-created.png" width="300" alt="ALB Created"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/alb-created.png?raw=true) |
-| **Architecture Diagram** | <img src="docs/proof-snapshots/architecture-diagram.png" width="300" alt="Architecture Diagram"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/architecture-diagram.png?raw=true) |
-| **DB Security Group** | <img src="docs/proof-snapshots/db-sg.png" width="300" alt="DB Security Group"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/db-sg.png?raw=true) |
-| **DB Subnet Group** | <img src="docs/proof-snapshots/db-subnet-group.png" width="300" alt="DB Subnet Group"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/db-subnet-group.png?raw=true) |
-| **EC2 AMIs** | <img src="docs/proof-snapshots/ec2-amis.png" width="300" alt="EC2 AMIs"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/ec2-amis.png?raw=true) |
-| **EC2 Snapshots** | <img src="docs/proof-snapshots/ec2-snapshots.png" width="300" alt="EC2 Snapshots"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/ec2-snapshots.png?raw=true) |
-| **EC2 SSM Inline Policy** | <img src="docs/proof-snapshots/ec2-ssm-inline-policy.png" width="300" alt="EC2 SSM Inline Policy"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/ec2-ssm-inline-policy.png?raw=true) |
-| **IAM Role Attached** | <img src="docs/proof-snapshots/iam-role-attached.png" width="300" alt="IAM Role Attached"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/iam-role-attached.png?raw=true) |
-| **Join Users + Orders + Products** | <img src="docs/proof-snapshots/join-users-orders-products.png" width="300" alt="Join Query"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/join-users-orders-products.png?raw=true) |
-| **Monthly Sales Summary** | <img src="docs/proof-snapshots/monthly-sales-summary.png" width="300" alt="Monthly Sales Summary"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/monthly-sales-summary.png?raw=true) |
-| **Orders Schema** | <img src="docs/proof-snapshots/orders-schema.png" width="300" alt="Orders Schema"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/orders-schema.png?raw=true) |
-| **Product Sales Summary** | <img src="docs/proof-snapshots/product-sales-summary.png" width="300" alt="Product Sales Summary"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/product-sales-summary.png?raw=true) |
-| **Products Data** | <img src="docs/proof-snapshots/products-data.png" width="300" alt="Products Data"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/products-data.png?raw=true) |
-| **Products Schema** | <img src="docs/proof-snapshots/products-schema.png" width="300" alt="Products Schema"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/products-schema.png?raw=true) |
-| **RDS Created** | <img src="docs/proof-snapshots/rds-created.png" width="300" alt="RDS Created"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/rds-created.png?raw=true) |
-| **RDS Instance** | <img src="docs/proof-snapshots/rds-instance.png" width="300" alt="RDS Instance"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/rds-instance.png?raw=true) |
-| **RDS Snapshots** | <img src="docs/proof-snapshots/rds-snapshots.png" width="300" alt="RDS Snapshots"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/rds-snapshots.png?raw=true) |
-| **RDS Stack Complete** | <img src="docs/proof-snapshots/rds-stack-complete.png" width="300" alt="RDS Stack Complete"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/rds-stack-complete.png?raw=true) |
-| **Repo Layout** | <img src="docs/proof-snapshots/repo-layout.png" width="300" alt="Repo Layout"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/repo-layout.png?raw=true) |
-| **Role Attachment** | <img src="docs/proof-snapshots/role-attachment.png" width="300" alt="Role Attachment"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/role-attachment.png?raw=true) |
-| **Rolling Average Sales** | <img src="docs/proof-snapshots/rolling-avg-sales.png" width="300" alt="Rolling Average Sales"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/rolling-avg-sales.png?raw=true) |
-| **Session Logging** | <img src="docs/proof-snapshots/session-logging.png" width="300" alt="Session Logging"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/session-logging.png?raw=true) |
-| **SSM Registration** | <img src="docs/proof-snapshots/ssm-registration.png" width="300" alt="SSM Registration"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/ssm-registration.png?raw=true) |
-| **Stack Created** | <img src="docs/proof-snapshots/stack-created.png" width="300" alt="Stack Created"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/stack-created.png?raw=true) |
-| **User Spending Summary** | <img src="docs/proof-snapshots/user-spending-summary.png" width="300" alt="User Spending Summary"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/user-spending-summary.png?raw=true) |
-| **Users Data** | <img src="docs/proof-snapshots/users-data.png" width="300" alt="Users Data"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/users-data.png?raw=true) |
-| **Users Schema** | <img src="docs/proof-snapshots/users-schema.png" width="300" alt="Users Schema"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/users-schema.png?raw=true) |
-| **VPC Created** | <img src="docs/proof-snapshots/vpc-created.png" width="300" alt="VPC Created"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/vpc-created.png?raw=true) |
-| **CloudFormation Stacks** | <img src="docs/proof-snapshots/cloudformation-stacks.png" width="300" alt="CloudFormation Stacks"/> [🔗 Full Image](https://github.com/Revaun/Architect-of-Storms/blob/main/docs/proof-snapshots/cloudformation-stacks.png?raw=true) |
+| **Account Setup** | <img src="docs/proof-snapshots/account-setup.png" width="300" alt="Account Setup"/> |
+| **Agent Status** | <img src="docs/proof-snapshots/agent-status.png" width="300" alt="Agent Status"/> |
+| **ALB Created** | <img src="docs/proof-snapshots/alb-created.png" width="300" alt="ALB Created"/> |
+| **Architecture Diagram** | <img src="docs/proof-snapshots/architecture-diagram.png" width="300" alt="Architecture Diagram"/> |
+| **DB Security Group** | <img src="docs/proof-snapshots/db-sg.png" width="300" alt="DB Security Group"/> |
+| **DB Subnet Group** | <img src="docs/proof-snapshots/db-subnet-group.png" width="300" alt="DB Subnet Group"/> |
+| **EC2 AMIs** | <img src="docs/proof-snapshots/ec2-amis.png" width="300" alt="EC2 AMIs"/> |
+| **EC2 Snapshots** | <img src="docs/proof-snapshots/ec2-snapshots.png" width="300" alt="EC2 Snapshots"/> |
+| **EC2 SSM Inline Policy** | <img src="docs/proof-snapshots/ec2-ssm-inline-policy.png" width="300" alt="EC2 SSM Inline Policy"/> |
+| **IAM Role Attached** | <img src="docs/proof-snapshots/iam-role-attached.png" width="300" alt="IAM Role Attached"/> |
+| **Join Users + Orders + Products** | <img src="docs/proof-snapshots/join-users-orders-products.png" width="300" alt="Join Query"/> |
+| **Monthly Sales Summary** | <img src="docs/proof-snapshots/monthly-sales-summary.png" width="300" alt="Monthly Sales Summary"/> |
+| **Orders Schema** | <img src="docs/proof-snapshots/orders-schema.png" width="300" alt="Orders Schema"/> |
+| **Product Sales Summary** | <img src="docs/proof-snapshots/product-sales-summary.png" width="300" alt="Product Sales Summary"/> |
+| **Products Data** | <img src="docs/proof-snapshots/products-data.png" width="300" alt="Products Data"/> |
+| **Products Schema** | <img src="docs/proof-snapshots/products-schema.png" width="300" alt="Products Schema"/> |
+| **RDS Created** | <img src="docs/proof-snapshots/rds-created.png" width="300" alt="RDS Created"/> |
+| **RDS Instance** | <img src="docs/proof-snapshots/rds-instance.png" width="300" alt="RDS Instance"/> |
+| **RDS Snapshots** | <img src="docs/proof-snapshots/rds-snapshots.png" width="300" alt="RDS Snapshots"/> |
+| **RDS Stack Complete** | <img src="docs/proof-snapshots/rds-stack-complete.png" width="300" alt="RDS Stack Complete"/> |
+| **Repo Layout** | <img src="docs/proof-snapshots/repo-layout.png" width="300" alt="Repo Layout"/> |
+| **Role Attachment** | <img src="docs/proof-snapshots/role-attachment.png" width="300" alt="Role Attachment"/> |
+| **Rolling Average Sales** | <img src="docs/proof-snapshots/rolling-avg-sales.png" width="300" alt="Rolling Average Sales"/> |
+| **Session Logging** | <img src="docs/proof-snapshots/session-logging.png" width="300" alt="Session Logging"/> |
+| **SSM Registration** | <img src="docs/proof-snapshots/ssm-registration.png" width="300" alt="SSM Registration"/> |
+| **Stack Created** | <img src="docs/proof-snapshots/stack-created.png" width="300" alt="Stack Created"/> |
+| **User Spending Summary** | <img src="docs/proof-snapshots/user-spending-summary.png" width="300" alt="User Spending Summary"/> |
+| **Users Data** | <img src="docs/proof-snapshots/users-data.png" width="300" alt="Users Data"/> |
+| **Users Schema** | <img src="docs/proof-snapshots/users-schema.png" width="300" alt="Users Schema"/> |
+| **VPC Created** | <img src="docs/proof-snapshots/vpc-created.png" width="300" alt="VPC Created"/> |
+| **Final Multi‑Tier Deployment** | <img src="docs/proof-snapshots/Architect-of-Storms_Final-Multi-Tier-Deployment-Snapshot.png" width="300" alt="Final Multi‑Tier Deployment"/> |
 
 
 

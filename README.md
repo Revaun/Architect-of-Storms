@@ -7,6 +7,7 @@
   <img src="assets/banner.png" alt="Project Banner" width="1000"/>
 </p>
 
+
 <p align="center">
   <em>Architect of Storms – Forging Cloud Architecture from the Storm</em>
 </p>
@@ -196,11 +197,4 @@ Project completed with full proof snapshots and reporting suite.
 MIT License — free to use, modify, and distribute with attribution.  
 
 ## Signature
-**Architect of Storms**  
-*From design to storm, precision in the cloud*
-
----
-
-<p align="center">
-  <em>Proof in the Storm, Precision in the Cloud ☁️</em>
-</p>
+**Architect of Storms**

@@ -156,22 +156,10 @@ ORDER BY p.name, month;
 ## 📸 Proof Snapshots
 **From setup to completion: a full proof trail of the Architect of Storms build**
 
-*(Chronological snapshots showing the storm forged into architecture — April 18 → May 2, 2026)*
+*(Chronological snapshots showing the storm forged into architecture — April → May , 2026)*
 
 | Stage | Snapshot |
 |-------|----------|
-| **Account Setup** | <img src="docs/proof-snapshots/account-setup.png" width="300" alt="Account Setup"/> |
-| **Repo Layout** | <img src="docs/proof-snapshots/repo-layout.png" width="300" alt="Repo Layout"/> |
-| **Users Schema** | <img src="docs/proof-snapshots/users-schema.png" width="300" alt="Users Schema"/> |
-| **Orders Schema** | <img src="docs/proof-snapshots/orders-schema.png" width="300" alt="Orders Schema"/> |
-| **Products Schema** | <img src="docs/proof-snapshots/products-schema.png" width="300" alt="Products Schema"/> |
-| **Users Data** | <img src="docs/proof-snapshots/users-data.png" width="300" alt="Users Data"/> |
-| **Products Data** | <img src="docs/proof-snapshots/products-data.png" width="300" alt="Products Data"/> |
-| **Product Sales Summary** | <img src="docs/proof-snapshots/product-sales-summary.png" width="300" alt="Product Sales Summary"/> |
-| **Join Users + Orders + Products** | <img src="docs/proof-snapshots/join-users-orders-products.png" width="300" alt="Join Query"/> |
-| **Monthly Sales Summary** | <img src="docs/proof-snapshots/monthly-sales-summary.png" width="300" alt="Monthly Sales Summary"/> |
-| **Rolling Average Sales** | <img src="docs/proof-snapshots/rolling-avg-sales.png" width="300" alt="Rolling Average Sales"/> |
-| **User Spending Summary** | <img src="docs/proof-snapshots/user-spending-summary.png" width="300" alt="User Spending Summary"/> |
 | **Architecture Diagram** | <img src="docs/proof-snapshots/architecture-diagram.png" width="300" alt="Architecture Diagram"/> |
 | **VPC Created** | <img src="docs/proof-snapshots/vpc-created.png" width="300" alt="VPC Created"/> |
 | **Stack Created** | <img src="docs/proof-snapshots/stack-created.png" width="300" alt="Stack Created"/> |
@@ -190,7 +178,21 @@ ORDER BY p.name, month;
 | **RDS Snapshots** | <img src="docs/proof-snapshots/rds-snapshots.png" width="300" alt="RDS Snapshots"/> |
 | **RDS Stack Complete** | <img src="docs/proof-snapshots/rds-stack-complete.png" width="300" alt="RDS Stack Complete"/> |
 | **Session Logging** | <img src="docs/proof-snapshots/session-logging.png" width="300" alt="Session Logging"/> |
+| **Account Setup** | <img src="docs/proof-snapshots/account-setup.png" width="300" alt="Account Setup"/> |
+| **Repo Layout** | <img src="docs/proof-snapshots/repo-layout.png" width="300" alt="Repo Layout"/> |
+| **Users Schema** | <img src="docs/proof-snapshots/users-schema.png" width="300" alt="Users Schema"/> |
+| **Orders Schema** | <img src="docs/proof-snapshots/orders-schema.png" width="300" alt="Orders Schema"/> |
+| **Products Schema** | <img src="docs/proof-snapshots/products-schema.png" width="300" alt="Products Schema"/> |
+| **Users Data** | <img src="docs/proof-snapshots/users-data.png" width="300" alt="Users Data"/> |
+| **Products Data** | <img src="docs/proof-snapshots/products-data.png" width="300" alt="Products Data"/> |
+| **Product Sales Summary** | <img src="docs/proof-snapshots/product-sales-summary.png" width="300" alt="Product Sales Summary"/> |
+| **Join Users + Orders + Products** | <img src="docs/proof-snapshots/join-users-orders-products.png" width="300" alt="Join Query"/> |
+| **Monthly Sales Summary** | <img src="docs/proof-snapshots/monthly-sales-summary.png" width="300" alt="Monthly Sales Summary"/> |
+| **Rolling Average Sales** | <img src="docs/proof-snapshots/rolling-avg-sales.png" width="300" alt="Rolling Average Sales"/> |
+| **User Spending Summary** | <img src="docs/proof-snapshots/user-spending-summary.png" width="300" alt="User Spending Summary"/> |
+| **SQL Proofs (Schemas & Queries)** | <img src="assets/sql-proofs.png" width="600" alt="SQL Schemas and Query Results"/> |
 | **Final Multi‑Tier Deployment** | <img src="docs/proof-snapshots/Architect-of-Storms_Final-Multi-Tier-Deployment-Snapshot.png" width="300" alt="Final Multi‑Tier Deployment"/> |
+
 
 ---
 
@@ -222,11 +224,19 @@ Project completed with full proof snapshots and reporting suite.
 
 ## Outro
 <p align="center">
-  <img src="assets/Outro_Silhouette.png" alt="Outro Silhouette" width="400
+  <img src="assets/Outro%20Silhouette.PNG" alt="Outro Silhouette" width="400"/>
+  <img src="assets/Navara_The_Calm_Architect_Final_Cyberstorm.png" alt="Navara — The Calm Architect" width="400"/>
+</p>
+
+<p align="center">
+  <em>From silhouette to serenity — Navara’s journey concludes as the storm obeys and the architecture stands complete.</em>
+</p>
+
+---
 
 ## Signature
 **Architect of Storms**  
 
 <p align="center">
-  <em>Proof in the Storm, Precision in the Cloud</em>
+  <em>Proof in the Storm, Precision in the Cloud ⛈️</em>
 </p>

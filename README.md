@@ -190,9 +190,19 @@ ORDER BY p.name, month;
 | **Monthly Sales Summary** | <img src="docs/proof-snapshots/monthly-sales-summary.png" width="300" alt="Monthly Sales Summary"/> |
 | **Rolling Average Sales** | <img src="docs/proof-snapshots/rolling-avg-sales.png" width="300" alt="Rolling Average Sales"/> |
 | **User Spending Summary** | <img src="docs/proof-snapshots/user-spending-summary.png" width="300" alt="User Spending Summary"/> |
-| **SQL Proofs (Schemas & Queries)** | <img src="assets/sql-proofs.png" width="600" alt="SQL Schemas and Query Results"/> |
 | **Final Multi‑Tier Deployment** | <img src="docs/proof-snapshots/Architect-of-Storms_Final-Multi-Tier-Deployment-Snapshot.png" width="300" alt="Final Multi‑Tier Deployment"/> |
 
+
+---
+
+## Navara’s Calm Resolution
+<p align="center">
+  <img src="assets/Navara_The_Calm_Architect_Final_Cyberstorm.png" alt="Navara — The Calm Architect" width="600"/>
+</p>
+
+<p align="center">
+  <em>Navara — the storm subdued, the architecture proven. Calm mastery follows the chaos, bridging proof to reflection.</em>
+</p>
 
 ---
 

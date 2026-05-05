@@ -7,11 +7,9 @@
   <img src="assets/banner.png" alt="Project Banner" width="1000"/>
 </p>
 
-<p align="center">
-  <em>Architect of Storms – Forging Cloud Architecture from the Storm</em>
-</p>
-
 ***
+
+
 
 ## About Me
 
@@ -241,10 +239,11 @@ Project completed with full proof snapshots and reporting suite.
   <em>From silhouette to serenity — the Architect’s journey concludes as the storm obeys and the architecture stands complete.</em>
 </p>
 
----
+***
 
 ## Signature
 <p align="center">
   <strong>Architect of Storms</strong><br>
   <em>Proof in the Storm, Precision in the Cloud ⛈️</em>
 </p>
+

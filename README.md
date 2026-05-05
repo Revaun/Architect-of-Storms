@@ -234,19 +234,17 @@ Project completed with full proof snapshots and reporting suite.
 
 ## Outro
 <p align="center">
-  <img src="assets/Outro%20Silhouette.PNG" alt="Outro Silhouette" width="400"/>
-  <img src="assets/Navara_The_Calm_Architect_Final_Cyberstorm.png" alt="Navara — The Calm Architect" width="400"/>
+  <img src="assets/Outro%20Silhouette.PNG" alt="Outro Silhouette" width="600"/>
 </p>
 
 <p align="center">
-  <em>From silhouette to serenity — Navara’s journey concludes as the storm obeys and the architecture stands complete.</em>
+  <em>From silhouette to serenity — the Architect’s journey concludes as the storm obeys and the architecture stands complete.</em>
 </p>
 
 ---
 
 ## Signature
-**Architect of Storms**  
-
 <p align="center">
+  <strong>Architect of Storms</strong><br>
   <em>Proof in the Storm, Precision in the Cloud ⛈️</em>
 </p>

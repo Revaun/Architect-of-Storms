@@ -7,7 +7,6 @@
   <img src="assets/banner.png" alt="Project Banner" width="1000"/>
 </p>
 
-
 <p align="center">
   <em>Architect of Storms – Forging Cloud Architecture from the Storm</em>
 </p>
@@ -24,7 +23,6 @@ Career goals: AWS Solutions Architect Pro • Machine Learning Specialty • Sec
 - ![AWS Security Specialty](https://img.shields.io/badge/AWS-SEC-red?style=flat-square) — Security specialty track  
 - ![DevOps Workflow](https://img.shields.io/badge/DevOps-Workflow-green?style=flat-square) — Workflow automation & CI/CD
 
-
 ---
 
 ## Architecture Overview
@@ -36,6 +34,7 @@ This project demonstrates a multi‑tier CloudFormation stack with scalable serv
 - **Amazon RDS** – Managed relational database  
 - **CloudWatch Monitoring** – Alarms and dashboards  
 
+---
 
 ## Features
 - Automated deployment with IaC (CloudFormation)  
@@ -45,8 +44,24 @@ This project demonstrates a multi‑tier CloudFormation stack with scalable serv
 - Monitoring and alerting with CloudWatch  
 - SQL analytics queries for reporting and trends  
 
+---
+
+## Visual Evolution
+<p align="center">
+  <img src="assets/Navara_Overlook.png" alt="Navara Overlook" width="400"/>
+  <img src="assets/Navara_Power_Surge.png" alt="Navara Power Surge" width="400"/>
+</p>
+
+<p align="center">
+  <em>Navara — from watchful command to unleashed power.</em>
+</p>
+
+---
+
 ## Deployment
 Scripts are provided for quick setup and teardown.
+
+---
 
 
 ## SQL Analytics Query
@@ -126,50 +141,58 @@ ORDER BY p.name, month;
 
 </details>
 
+## Visual Interlude
+<p align="center">
+  <img src="assets/Navara_Stormfront.png" alt="Navara Stormfront" width="400"/>
+  <img src="assets/Navara_Eye_of_the_Storm.png" alt="Navara Eye of the Storm" width="400"/>
+</p>
+
+<p align="center">
+  <em>Navara — standing at the stormfront, then gazing into its eye.</em>
+</p>
+
+---
 
 ## 📸 Proof Snapshots
-
 **From setup to completion: a full proof trail of the Architect of Storms build**
+
+*(Chronological snapshots showing the storm forged into architecture — April 18 → May 2, 2026)*
 
 | Stage | Snapshot |
 |-------|----------|
 | **Account Setup** | <img src="docs/proof-snapshots/account-setup.png" width="300" alt="Account Setup"/> |
-| **Agent Status** | <img src="docs/proof-snapshots/agent-status.png" width="300" alt="Agent Status"/> |
-| **ALB Created** | <img src="docs/proof-snapshots/alb-created.png" width="300" alt="ALB Created"/> |
-| **Architecture Diagram** | <img src="docs/proof-snapshots/architecture-diagram.png" width="300" alt="Architecture Diagram"/> |
-| **DB Security Group** | <img src="docs/proof-snapshots/db-sg.png" width="300" alt="DB Security Group"/> |
-| **DB Subnet Group** | <img src="docs/proof-snapshots/db-subnet-group.png" width="300" alt="DB Subnet Group"/> |
-| **EC2 AMIs** | <img src="docs/proof-snapshots/ec2-amis.png" width="300" alt="EC2 AMIs"/> |
-| **EC2 Snapshots** | <img src="docs/proof-snapshots/ec2-snapshots.png" width="300" alt="EC2 Snapshots"/> |
-| **EC2 SSM Inline Policy** | <img src="docs/proof-snapshots/ec2-ssm-inline-policy.png" width="300" alt="EC2 SSM Inline Policy"/> |
-| **IAM Role Attached** | <img src="docs/proof-snapshots/iam-role-attached.png" width="300" alt="IAM Role Attached"/> |
+| **Repo Layout** | <img src="docs/proof-snapshots/repo-layout.png" width="300" alt="Repo Layout"/> |
+| **Users Schema** | <img src="docs/proof-snapshots/users-schema.png" width="300" alt="Users Schema"/> |
+| **Orders Schema** | <img src="docs/proof-snapshots/orders-schema.png" width="300" alt="Orders Schema"/> |
+| **Products Schema** | <img src="docs/proof-snapshots/products-schema.png" width="300" alt="Products Schema"/> |
+| **Users Data** | <img src="docs/proof-snapshots/users-data.png" width="300" alt="Users Data"/> |
+| **Products Data** | <img src="docs/proof-snapshots/products-data.png" width="300" alt="Products Data"/> |
+| **Product Sales Summary** | <img src="docs/proof-snapshots/product-sales-summary.png" width="300" alt="Product Sales Summary"/> |
 | **Join Users + Orders + Products** | <img src="docs/proof-snapshots/join-users-orders-products.png" width="300" alt="Join Query"/> |
 | **Monthly Sales Summary** | <img src="docs/proof-snapshots/monthly-sales-summary.png" width="300" alt="Monthly Sales Summary"/> |
-| **Orders Schema** | <img src="docs/proof-snapshots/orders-schema.png" width="300" alt="Orders Schema"/> |
-| **Product Sales Summary** | <img src="docs/proof-snapshots/product-sales-summary.png" width="300" alt="Product Sales Summary"/> |
-| **Products Data** | <img src="docs/proof-snapshots/products-data.png" width="300" alt="Products Data"/> |
-| **Products Schema** | <img src="docs/proof-snapshots/products-schema.png" width="300" alt="Products Schema"/> |
+| **Rolling Average Sales** | <img src="docs/proof-snapshots/rolling-avg-sales.png" width="300" alt="Rolling Average Sales"/> |
+| **User Spending Summary** | <img src="docs/proof-snapshots/user-spending-summary.png" width="300" alt="User Spending Summary"/> |
+| **Architecture Diagram** | <img src="docs/proof-snapshots/architecture-diagram.png" width="300" alt="Architecture Diagram"/> |
+| **VPC Created** | <img src="docs/proof-snapshots/vpc-created.png" width="300" alt="VPC Created"/> |
+| **Stack Created** | <img src="docs/proof-snapshots/stack-created.png" width="300" alt="Stack Created"/> |
+| **IAM Role Attached** | <img src="docs/proof-snapshots/iam-role-attached.png" width="300" alt="IAM Role Attached"/> |
+| **Role Attachment** | <img src="docs/proof-snapshots/role-attachment.png" width="300" alt="Role Attachment"/> |
+| **EC2 SSM Inline Policy** | <img src="docs/proof-snapshots/ec2-ssm-inline-policy.png" width="300" alt="EC2 SSM Inline Policy"/> |
+| **SSM Registration** | <img src="docs/proof-snapshots/ssm-registration.png" width="300" alt="SSM Registration"/> |
+| **Agent Status** | <img src="docs/proof-snapshots/agent-status.png" width="300" alt="Agent Status"/> |
+| **EC2 AMIs** | <img src="docs/proof-snapshots/ec2-amis.png" width="300" alt="EC2 AMIs"/> |
+| **EC2 Snapshots** | <img src="docs/proof-snapshots/ec2-snapshots.png" width="300" alt="EC2 Snapshots"/> |
+| **ALB Created** | <img src="docs/proof-snapshots/alb-created.png" width="300" alt="ALB Created"/> |
+| **DB Security Group** | <img src="docs/proof-snapshots/db-sg.png" width="300" alt="DB Security Group"/> |
+| **DB Subnet Group** | <img src="docs/proof-snapshots/db-subnet-group.png" width="300" alt="DB Subnet Group"/> |
 | **RDS Created** | <img src="docs/proof-snapshots/rds-created.png" width="300" alt="RDS Created"/> |
 | **RDS Instance** | <img src="docs/proof-snapshots/rds-instance.png" width="300" alt="RDS Instance"/> |
 | **RDS Snapshots** | <img src="docs/proof-snapshots/rds-snapshots.png" width="300" alt="RDS Snapshots"/> |
 | **RDS Stack Complete** | <img src="docs/proof-snapshots/rds-stack-complete.png" width="300" alt="RDS Stack Complete"/> |
-| **Repo Layout** | <img src="docs/proof-snapshots/repo-layout.png" width="300" alt="Repo Layout"/> |
-| **Role Attachment** | <img src="docs/proof-snapshots/role-attachment.png" width="300" alt="Role Attachment"/> |
-| **Rolling Average Sales** | <img src="docs/proof-snapshots/rolling-avg-sales.png" width="300" alt="Rolling Average Sales"/> |
 | **Session Logging** | <img src="docs/proof-snapshots/session-logging.png" width="300" alt="Session Logging"/> |
-| **SSM Registration** | <img src="docs/proof-snapshots/ssm-registration.png" width="300" alt="SSM Registration"/> |
-| **Stack Created** | <img src="docs/proof-snapshots/stack-created.png" width="300" alt="Stack Created"/> |
-| **User Spending Summary** | <img src="docs/proof-snapshots/user-spending-summary.png" width="300" alt="User Spending Summary"/> |
-| **Users Data** | <img src="docs/proof-snapshots/users-data.png" width="300" alt="Users Data"/> |
-| **Users Schema** | <img src="docs/proof-snapshots/users-schema.png" width="300" alt="Users Schema"/> |
-| **VPC Created** | <img src="docs/proof-snapshots/vpc-created.png" width="300" alt="VPC Created"/> |
 | **Final Multi‑Tier Deployment** | <img src="docs/proof-snapshots/Architect-of-Storms_Final-Multi-Tier-Deployment-Snapshot.png" width="300" alt="Final Multi‑Tier Deployment"/> |
 
-
-
-
-</details>
-
+---
 
 ## Lessons Learned
 - **Infrastructure as Code** simplifies repeatable deployments  
@@ -180,12 +203,14 @@ ORDER BY p.name, month;
 - **Monitoring with CloudWatch** provides visibility  
 - **Documentation with snapshots** proves progress  
 
-</details>
+---
 
 ## Issues Faced & Resolutions
 - **Duplicate Entry Error** → enforced unique constraints  
 - **Dead Forecast Link** → removed broken reference  
 - **Excessive Badges** → slimmed down for clarity  
+
+---
 
 ## Completion
 **This project demonstrates the full lifecycle — from design to proof in the storm.**
@@ -193,8 +218,11 @@ ORDER BY p.name, month;
 Project completed with full proof snapshots and reporting suite.  
 **Author:** Revaun • **Date:** April 2026   
 
-## License
-MIT License — free to use, modify, and distribute with attribution.  
+---
+
+## Outro
+<p align="center">
+  <img src="assets/Outro_Silhouette.png" alt="Outro Silhouette" width="400
 
 ## Signature
 **Architect of Storms**  

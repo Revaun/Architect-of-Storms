@@ -48,8 +48,8 @@ This project demonstrates a multi‑tier CloudFormation stack with scalable serv
 
 ## Visual Evolution
 <p align="center">
-  <img src="assets/Navara_Overlook.png" alt="Naivara Sanspetum Overlook" width="400"/>
-  <img src="assets/Navara_Power_Surge.png" alt="Naivara Sanspetum Power Surge" width="400"/>
+  <img src="assets/Naivara_Overlook.png" alt="Naivara Sanspetum Overlook" width="400"/>
+  <img src="assets/Naivara_Power_Surge.png" alt="Naivara Sanspetum Power Surge" width="400"/>
 </p>
 
 <p align="center">
@@ -143,8 +143,8 @@ ORDER BY p.name, month;
 
 ## Visual Interlude
 <p align="center">
-  <img src="assets/Navara_Stormfront.png" alt="Naivara Sanspetum Stormfront" width="400"/>
-  <img src="assets/Navara_Eye_of_the_Storm.png" alt="Naivara Sanspetum Eye of the Storm" width="400"/>
+  <img src="assets/Naivara_Stormfront.png" alt="Naivara Sanspetum Stormfront" width="400"/>
+  <img src="assets/Naivara_Eye_of_the_Storm.png" alt="Naivara Sanspetum Eye of the Storm" width="400"/>
 </p>
 
 <p align="center">
@@ -195,9 +195,9 @@ ORDER BY p.name, month;
 
 ---
 
-## Navara’s Calm Resolution
+## Naivara’s Calm Resolution
 <p align="center">
-  <img src="assets/Navara_The_Calm_Architect_Final_Cyberstorm.png" alt="Naivara Sanspetum — The Calm Architect" width="600"/>
+  <img src="assets/Naivara_The_Calm_Architect_Final_Cyberstorm.png" alt="Naivara Sanspetum — The Calm Architect" width="600"/>
 </p>
 
 <p align="center">

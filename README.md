@@ -48,12 +48,12 @@ This project demonstrates a multi‑tier CloudFormation stack with scalable serv
 
 ## Visual Evolution
 <p align="center">
-  <img src="assets/Naivara_Overlook.png" alt="Naivara Overlook" width="400"/>
-  <img src="assets/Naivara_Power_Surge.png" alt="Naivara Power Surge" width="400"/>
+  <img src="assets/Navara_Overlook.png" alt="Navara Overlook" width="400"/>
+  <img src="assets/Navara_Power_Surge.png" alt="Navara Power Surge" width="400"/>
 </p>
 
 <p align="center">
-  <em>Naivara — from watchful command to unleashed power.</em>
+  <em>Navara — from watchful command to unleashed power.</em>
 </p>
 
 ---
@@ -143,12 +143,12 @@ ORDER BY p.name, month;
 
 ## Visual Interlude
 <p align="center">
-  <img src="assets/Naivara_Stormfront.png" alt="Naivara Stormfront" width="400"/>
-  <img src="assets/Naivara_Eye_of_the_Storm.png" alt="Naivara Eye of the Storm" width="400"/>
+  <img src="assets/Navara_Stormfront.png" alt="Navara Stormfront" width="400"/>
+  <img src="assets/Navara_Eye_of_the_Storm.png" alt="Navara Eye of the Storm" width="400"/>
 </p>
 
 <p align="center">
-  <em>Naivara — standing at the stormfront, then gazing into its eye.</em>
+  <em>Navara — standing at the stormfront, then gazing into its eye.</em>
 </p>
 
 ---
@@ -195,13 +195,13 @@ ORDER BY p.name, month;
 
 ---
 
-## Naivara’s Calm Resolution
+## Navara’s Calm Resolution
 <p align="center">
-  <img src="assets/Naivara_The_Calm_Architect_Final_Cyberstorm.png" alt="Naivara — The Calm Architect" width="600"/>
+  <img src="assets/Navara_The_Calm_Architect_Final_Cyberstorm.png" alt="Navara — The Calm Architect" width="600"/>
 </p>
 
 <p align="center">
-  <em>Naivara — the storm subdued, the architecture proven. Calm mastery follows the chaos, bridging proof to reflection.</em>
+  <em>Navara — the storm subdued, the architecture proven. Calm mastery follows the chaos, bridging proof to reflection.</em>
 </p>
 
 ---

@@ -7,9 +7,11 @@
   <img src="assets/banner.png" alt="Project Banner" width="1000"/>
 </p>
 
+<p align="center">
+  <em>Naivara Sanspetum — the Architect of Storms, forging balance between chaos and cloud.</em>
+</p>
+
 ***
-
-
 
 ## About Me
 
